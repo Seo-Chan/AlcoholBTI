@@ -8,6 +8,7 @@
 
 body {
   background-color: sandybrown;
+  padding: 10px;
 }
 
 #qna {
@@ -16,4 +17,21 @@ body {
 
 #result {
   display: none;
+}
+
+.qnaBox {
+  margin-top: 150px;
+  font-size: 1.3rem;
+}
+
+.answerBox {
+  margin: 150px 0;
+  gap: 30px;
+}
+
+.answerList {
+  height: 90px;
+  line-height: 2;
+  text-align: center;
+  border: 2px black solid;
 }
