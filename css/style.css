@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .ir {
   position: absolute;
   clip-path: inset(50%);
@@ -7,8 +15,9 @@
 }
 
 body {
-  background-color: sandybrown;
+  background-color: whitesmoke;
   padding: 10px;
+  font-family: "Dovemayo_gothic";
 }
 
 #qna {
