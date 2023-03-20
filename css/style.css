@@ -80,6 +80,7 @@ img {
   border: 2px solid #575757;
   padding: 15px;
   background-color: white;
+  border-radius: 8px;
 }
 
 .descList {
@@ -88,4 +89,24 @@ img {
 
 li + li {
   margin-top: 15px;
+}
+
+.chemi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #575757;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.type.best {
+  border-right: 1px solid #575757;
 }
