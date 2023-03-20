@@ -19,11 +19,37 @@ function setResult() {
   var imgURL = "img/image-" + point + ".png";
   resultImg.src = imgURL;
   resultImg.alt = point;
-  resultImg.classList.add("img-fluid");
+  //   resultImg.classList.add("img-fluid");
   imgDiv.appendChild(resultImg);
 
   const resultDesc = document.querySelector(".resultDesc");
-  resultDesc.innerHTML = resultList[point].desc;
+  resultList[point].desc.map((desc) => {
+    var descList = document.createElement("li");
+    descList.innerHTML = desc;
+    resultDesc.appendChild(descList);
+    descList.classList.add("descList");
+  });
+
+  // 잘 맞는 유형과 잘 맞지 않는 유형
+  const best = document.querySelector(".best");
+  var bestImg = document.createElement("img");
+  var bestImgURL = "img/image-" + resultList[point].bestType.id + ".png";
+  bestImg.src = bestImgURL;
+  best.appendChild(bestImg);
+  var bestName = document.createElement("p");
+  bestName.innerHTML = resultList[point].bestType.type;
+  bestName.classList.add("fs-4");
+  best.appendChild(bestName);
+
+  const bad = document.querySelector(".bad");
+  var badImg = document.createElement("img");
+  var badImgURL = "img/image-" + resultList[point].badType.id + ".png";
+  badImg.src = badImgURL;
+  bad.appendChild(badImg);
+  var badName = document.createElement("p");
+  badName.innerHTML = resultList[point].badType.type;
+  badName.classList.add("fs-4");
+  bad.appendChild(badName);
 }
 
 function goResult() {
