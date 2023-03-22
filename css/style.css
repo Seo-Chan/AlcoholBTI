@@ -32,6 +32,23 @@ img {
   max-width: 100%;
 }
 
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgMain {
+  border-radius: 50px;
+}
+
+.btnStart {
+  width: 80%;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
 .imgLogo {
   width: 100%;
   display: block;
