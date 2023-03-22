@@ -38,7 +38,7 @@ function setResult() {
   best.appendChild(bestImg);
   var bestName = document.createElement("p");
   bestName.innerHTML = resultList[point].bestType.type;
-  bestName.classList.add("fs-4");
+  bestName.classList.add("typeResName");
   best.appendChild(bestName);
 
   const bad = document.querySelector(".bad");
@@ -48,7 +48,7 @@ function setResult() {
   bad.appendChild(badImg);
   var badName = document.createElement("p");
   badName.innerHTML = resultList[point].badType.type;
-  badName.classList.add("fs-4");
+  badName.classList.add("typeResName");
   bad.appendChild(badName);
 }
 
@@ -105,6 +105,8 @@ function goNext(qnaIdx) {
   for (let i in qnaList[qnaIdx].a) {
     addAnswer(qnaList[qnaIdx].a[i].answer, qnaIdx, i);
   }
+  var status = document.querySelector(".statusBar");
+  status.style.width = (100 / endPoint) * (qnaIdx + 1) + "%";
 }
 
 function begin() {
