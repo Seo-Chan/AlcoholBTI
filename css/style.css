@@ -15,8 +15,11 @@
 }
 
 body {
+  max-width: 430px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #f6e7e3;
-  padding: 10px;
   font-family: "Dovemayo_gothic";
 }
 
