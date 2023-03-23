@@ -130,13 +130,21 @@ img {
 .resultDesc {
   margin: 30px 0;
   border: 2px solid #575757;
-  padding: 15px;
+  padding: 20px;
   background-color: white;
   border-radius: 8px;
+  text-align: justify;
 }
 
 .descList {
   line-height: 1.3;
+  list-style-type: "*";
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+.descList::marker {
+  color: #3a554d;
 }
 
 li + li {
