@@ -84,27 +84,32 @@ img {
 }
 
 .qnaBox {
-  margin: 60px auto 0;
-  font-size: 1.2rem;
   max-width: 500px;
+  margin: 60px auto 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  text-align: center;
 }
 
 .answerBox {
-  align-items: center;
   width: 80%;
+  align-items: center;
   gap: 2vh;
-  margin: 100px 0;
+  margin: 100px auto;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
 }
 
 .answerList {
   width: 100%;
   height: 100%;
-  padding: 40px 20px;
-  font-size: 18px;
+  padding: 30px 20px;
   max-width: calc(387px);
   border: 1px solid #274642;
   border-radius: 8px;
   background-color: white;
+  font-family: "Dovemayo_gothic";
 }
 
 .resultCont {
