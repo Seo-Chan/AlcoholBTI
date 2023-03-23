@@ -4,11 +4,13 @@ const result = document.querySelector("#result");
 const endPoint = 12;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+// 결과 계산
 function calResult() {
   var result = select.indexOf(Math.max(...select));
   return result;
 }
 
+// 결과 페이지
 function setResult() {
   let point = calResult();
   const resultName = document.querySelector(".resultName");
@@ -19,7 +21,6 @@ function setResult() {
   var imgURL = "img/image-" + point + ".png";
   resultImg.src = imgURL;
   resultImg.alt = point;
-  //   resultImg.classList.add("img-fluid");
   imgDiv.appendChild(resultImg);
 
   const resultDesc = document.querySelector(".resultDesc");
@@ -52,6 +53,7 @@ function setResult() {
   bad.appendChild(badName);
 }
 
+// 결과 페이지 애니메이션
 function goResult() {
   qna.style.WebkitAnimation = "fadeOut 1s";
   qna.style.animation = "fadeOut 1s";
@@ -66,6 +68,7 @@ function goResult() {
   setResult();
 }
 
+// 답변 선택지 생성
 function addAnswer(answerTxt, qnaIdx, idx) {
   var answerBox = document.querySelector(".answerBox");
   var answer = document.createElement("button");
@@ -95,6 +98,7 @@ function addAnswer(answerTxt, qnaIdx, idx) {
   );
 }
 
+// 답변 선택 시 다음 질문으로 넘어가기
 function goNext(qnaIdx) {
   if (qnaIdx === endPoint) {
     goResult();
@@ -109,6 +113,7 @@ function goNext(qnaIdx) {
   status.style.width = (100 / endPoint) * (qnaIdx + 1) + "%";
 }
 
+// 시작하기
 function begin() {
   main.style.display = "none";
   qna.style.display = "block";
