@@ -58,8 +58,32 @@
           onclick="location.href='/'"
         />
       </button>
+      <div class="resultShare">
+        <p class="share">친구에게 공유하기</p>
+        <div class="shareLink">
+          <a
+            id="btnTwitter"
+            class="link-icon twitter"
+            href="javascript:shareTwitter();"
+            ><img src="./img/icon-twitter.png" alt="twitter"
+          /></a>
+          <a
+            id="btnFacebook"
+            class="link-icon facebook"
+            href="javascript:shareFacebook();"
+            ><img src="./img/icon-facebook.png" alt="facebook"
+          /></a>
+          <a
+            id="btnKakao"
+            class="link-icon kakao"
+            href="javascript:shareKakao();"
+            ><img src="./img/icon-kakao.png" alt="kakao"
+          /></a>
+        </div>
+      </div>
     </section>
     <script src="./js/data.js" charset="utf-8"></script>
     <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
   </body>
 </html>
