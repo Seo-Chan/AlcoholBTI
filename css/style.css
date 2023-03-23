@@ -176,3 +176,13 @@ li + li {
 .type.best {
   border-right: 1px solid #575757;
 }
+
+.typeResult {
+  font-size: 1.5rem;
+  padding: 5px 0;
+  border-bottom: 4px double #575757;
+}
+
+.typeResName {
+  font-size: 1.2rem;
+}
