@@ -186,3 +186,9 @@ li + li {
 .typeResName {
   font-size: 1.2rem;
 }
+
+.btnReset {
+  display: block;
+  width: 80%;
+  margin: 40px auto;
+}
