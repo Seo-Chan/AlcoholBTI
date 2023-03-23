@@ -61,7 +61,7 @@ img {
 }
 
 .imgLogo {
-  width: 100%;
+  width: 70%;
   display: block;
   margin: 0 auto;
 }
@@ -119,6 +119,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.imgResult {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  border-radius: 50%;
+  margin: 20px 0;
 }
 
 .resultName {
